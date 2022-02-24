@@ -14,14 +14,17 @@ const routes: Routes = [
     path: 'home', component: HomeComponent
   },
   {
-    path: 'home/antares', component: AntaresComponent
+    path: 'antares', component: AntaresComponent
   },
 
   {
-    path: 'home/frapppe', component: FrappeComponent
+    path: 'frappe', component: FrappeComponent
   },
   {
     path: 'dataAdmin', component: DataPostComponent
+  },
+  {
+    path: '**', redirectTo: 'home'
   }
 ];
 
